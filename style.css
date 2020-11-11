@@ -1,3 +1,9 @@
+html{
+     background: #3023ae;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#3023ae), color-stop(100%,#c86dd7));
+    background: linear-gradient(135deg,  #3023ae 0%,#c86dd7 100%);
+    background-attachment: fixed;
+}
 
 .row h1{
     color: yellow;
