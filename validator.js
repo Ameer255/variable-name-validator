@@ -1,22 +1,22 @@
 function check(){
     
-    var a=document.getElementById("var-name");
-    var b=document.getElementById("output");
-    var c=a.value;
+    let a=document.getElementById("var-name");
+    let b=document.getElementById("output");
+    let c=a.value;
     
     
-    var key;
-    var x="5";
-    var i;
-    var k=0;
-    var ch;
+    let key;
+    let x="5";
+    let i;
+    let k=0;
+    let ch;
     
       key = ["abstract", "arguments",	"await",	"boolean","break",	"byte",	"case",	"catch", "char",	"class*",	"const",	"continue","debugger",	"default",	"delete"	,"do",
              "double",	"else",	"enum*",	"eval", "export",	"extends",	"false	final", "finally",	"float",	"for",	"function", "goto",	"if",	"implements",	"import",
              "in",	"instanceof",	"int",	"interface","let*",	"long",	"native",	"new", "null",	"package",	"private",	"protected", "public",	"return",	"short",	"static",
              "super",	"switch",	"synchronized",	"this", "throw",	"throws",	"transient",	"true", "try",	"typeof",	"var",	"void", "volatile",	"while",	"with",	"yield" ];
       
-    var l=key.keys();
+    let l=key.keys();
     
     for ( i of l)
     {
@@ -24,7 +24,7 @@ function check(){
         k = 1;
         x="8";
         
-        if(x=="8" && key[i]!=c){
+        if(x=="8" && key[i]!=c && key[i]!=""){
           b.style.color=" rgb(3, 156, 24)";
         b.innerHTML="<h2>"+c+"</h2>"+"<h2>"+"It's a valid variable name </h2> ";
         
@@ -40,7 +40,7 @@ function check(){
     
     
     
-    if(c.charCodeAt(0)>=48&&c.charCodeAt(0)<=57)
+    if(c.charCodeAt(0)>=48 && c.charCodeAt(0)<=57)
     {
       x="6";
         b.style.color="red";
